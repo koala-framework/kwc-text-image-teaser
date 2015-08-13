@@ -1,0 +1,26 @@
+@import "compass/css3/box-sizing";
+@import "compass/css3/transform";
+
+.cssClass {
+    .image {
+        @include transform(translate3d(0,0,0));                                                                         //optimized on hover
+        position: relative;
+    }
+
+    &.none {
+        background: none;
+    }
+
+    &.white {
+        background: #fff;
+    }
+
+    &.grey {
+        background: #e1e1e1;
+    }
+
+    .text {
+        @include box-sizing(border-box);
+        padding: 12px 15px 10px 15px;
+    }
+}

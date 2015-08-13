@@ -1,0 +1,14 @@
+<div class="{{ cssClass }} {{ color }}">
+    {% if link.hasContent() %}
+    {{ renderer.component(link) }}
+    {% endif %}
+    <div class="image">
+        {{ renderer.component(image) }}
+    </div>
+    <div class="text">
+        {{ renderer.component(text) }}
+    </div>
+    {% if link.hasContent() %}
+        </a>
+    {% endif %}
+</div>
