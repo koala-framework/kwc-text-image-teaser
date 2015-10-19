@@ -5,7 +5,7 @@ class Kwc_TextImageTeaser_Component extends Kwc_Abstract_Composite_Component
     {
         $ret = parent::getSettings();
         $ret['componentName'] = trlKwfStatic('Teaser with Image');
-        $ret['generators']['child']['component']['image'] = 'Kwc_Basic_ImageTeaser_Image_Component';
+        $ret['generators']['child']['component']['image'] = 'Kwc_TextImageTeaser_Image_Component';
         $ret['generators']['child']['component']['text'] = 'Kwc_Basic_Text_Component';
         $ret['generators']['child']['component']['link'] = 'Kwc_Basic_LinkTag_Component';
         $ret['extConfig'] = 'Kwc_Basic_ImageTeaser_ExtConfig';
