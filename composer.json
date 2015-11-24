@@ -13,6 +13,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-0": {
+            "TextImageTeaser_": "",
             "Kwc_TextImageTeaser_": ""
         }
     }

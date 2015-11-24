@@ -1,5 +1,5 @@
 <?php
-class Kwc_TextImageTeaser_Form extends Kwc_Abstract_Composite_Form
+class TextImageTeaser_Kwc_Teaser_Form extends Kwc_Abstract_Composite_Form
 {
     protected function _initFields()
     {

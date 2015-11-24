@@ -1,5 +1,5 @@
 <?php
-class Kwc_TextImageTeaser_ExtConfig extends Kwf_Component_Abstract_ExtConfig_Form
+class TextImageTeaser_Kwc_Teaser_ExtConfig extends Kwf_Component_Abstract_ExtConfig_Form
 {
     protected function _getConfig()
     {
