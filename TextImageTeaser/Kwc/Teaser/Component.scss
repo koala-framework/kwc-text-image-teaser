@@ -1,9 +1,6 @@
-@import "compass/css3/box-sizing";
-@import "compass/css3/transform";
-
 .kwcClass {
     .kwcBem__image {
-        @include transform(translate3d(0,0,0));                                                                         //optimized on hover
+        transform: translate3d(0, 0, 0); //optimized on hover
         position: relative;
     }
 
@@ -20,7 +17,7 @@
     }
 
     .kwcBem__text {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
         padding: 12px 15px 10px 15px;
     }
 }
