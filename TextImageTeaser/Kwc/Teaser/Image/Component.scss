@@ -3,14 +3,14 @@
 @import "compass/css3/transform";
 @import "compass/css3/opacity";
 
-.cssClass {
+.kwcClass {
     img {
         @include transition-property(all);
         @include transition-duration(0.4s);
         @include transform(scale(1,1));
     }
 
-    .imageCaption {
+    .kwcBem__imageCaption {
         @include box-sizing(border-box);
         @include opacity(0);
         @include transition-property(opacity);
@@ -37,7 +37,7 @@
     }
 
     &:hover {
-        .imageCaption {
+        .kwcBem__imageCaption {
             height: 100%;
             @include transition-property(opacity);
             @include transition-duration(0.4s);
