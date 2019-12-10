@@ -1,20 +1,15 @@
-@import "compass/css3/transition";
-@import "compass/css3/box-sizing";
-@import "compass/css3/transform";
-@import "compass/css3/opacity";
-
-.cssClass {
+.kwcClass {
     img {
-        @include transition-property(all);
-        @include transition-duration(0.4s);
-        @include transform(scale(1,1));
+        transition-property: all;
+        transition-duration: 0.4s;
+        transform: scale(1, 1);
     }
 
-    .imageCaption {
-        @include box-sizing(border-box);
-        @include opacity(0);
-        @include transition-property(opacity);
-        @include transition-duration(0.2s);
+    .kwcBem__imageCaption {
+        box-sizing: border-box;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 0.2s;
         background: rgba(0, 0, 0, 0.5);
         text-transform: uppercase;
         padding: 10px 0 0px 0;
@@ -30,30 +25,30 @@
             text-align: center;
             width: 100%;
             top: 50%;
-            @include transition-property(all);
-            @include transition-duration(0.2s);
-            @include transform(translate3d(0px, 100px, 0px));
+            transition-property: all;
+            transition-duration: 0.2s;
+            transform: translate3d(0, 100px, 0);
         }
     }
 
     &:hover {
-        .imageCaption {
+        .kwcBem__imageCaption {
             height: 100%;
-            @include transition-property(opacity);
-            @include transition-duration(0.4s);
-            @include opacity(1);
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            opacity: 1;
 
             span {
-                @include transition-property(all);
-                @include transition-duration(0.4s);
-                @include transform(translate3d(0px, 0px, 0px));
+                transition-property: all;
+                transition-duration: 0.4s;
+                transform: translate3d(0, 0, 0);
             }
         }
 
         img {
-            @include transition-property(all);
-            @include transition-duration(0.4s);
-            @include transform(scale(1.03,1.03));
+            transition-property: all;
+            transition-duration: 0.4s;
+            transform: scale(1.03, 1.03);
         }
     }
 }

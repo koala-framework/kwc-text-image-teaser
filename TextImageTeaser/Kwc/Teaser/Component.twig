@@ -1,11 +1,11 @@
-<div class="{{ cssClass }} {{ color }}">
+<div class="{{ rootElementClass }} {{ color }}">
     {% if link.hasContent() %}
     {{ renderer.component(link) }}
     {% endif %}
-    <div class="image">
+    <div class="{{ 'image'|bemClass }}">
         {{ renderer.component(image) }}
     </div>
-    <div class="text">
+    <div class="{{ 'text'|bemClass }}">
         {{ renderer.component(text) }}
     </div>
     {% if link.hasContent() %}
