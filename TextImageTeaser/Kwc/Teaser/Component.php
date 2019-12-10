@@ -1,9 +1,9 @@
 <?php
 class TextImageTeaser_Kwc_Teaser_Component extends Kwc_Abstract_Composite_Component
 {
-    public static function getSettings()
+    public static function getSettings($param = null)
     {
-        $ret = parent::getSettings();
+        $ret = parent::getSettings($param);
         $ret['componentName'] = trlKwfStatic('Teaser with Image');
         $ret['generators']['child']['component']['image'] = 'TextImageTeaser_Kwc_Teaser_Image_Component';
         $ret['generators']['child']['component']['text'] = 'Kwc_Basic_Text_Component';
@@ -20,9 +20,9 @@ class TextImageTeaser_Kwc_Teaser_Component extends Kwc_Abstract_Composite_Compon
         return $ret;
     }
 
-    public function getTemplateVars()
+    public function getTemplateVars(Kwf_Component_Renderer_Abstract $renderer)
     {
-        $ret = parent::getTemplateVars();
+        $ret = parent::getTemplateVars($renderer);
         $ret['color'] = $this->getRow()->color;
         return $ret;
     }
